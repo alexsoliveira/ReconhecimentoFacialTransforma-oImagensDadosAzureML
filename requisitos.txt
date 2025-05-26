@@ -1,0 +1,18 @@
+# Criação de um recurso de reconhecimento facial no Azure CLI
+az cognitiveservices account create \
+  --name <nome_da_conta> \
+  --resource-group <nome_do_grupo_de_recursos> \
+  --kind Face \
+  --sku S0 \
+  --location <localização> \
+  --yes
+
+# Configuração do recurso de reconhecimento facial
+az cognitiveservices account keys list \
+  --name <nome_da_conta> \
+  --resource-group <nome_do_grupo_de_recursos>
+
+portal.vision.cognitive.azure.com
+
+
+
